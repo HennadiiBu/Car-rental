@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav>
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/catalog">About</NavLink>
+      <NavLink to="/catalog">Catalog</NavLink>
       <NavLink to="/favorites">Products</NavLink>
     </nav>
   );

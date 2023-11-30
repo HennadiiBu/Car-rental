@@ -1,8 +1,11 @@
 import React from 'react'
+import Catalog from '../components/Catalog/Catalog'
 
 const CatalogPage = () => {
   return (
-    <div>CatalogPage</div>
+    <div>
+      <Catalog />
+    </div>
   )
 }
 

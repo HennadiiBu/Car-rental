@@ -1,35 +1,30 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
+import { requestAdverts } from "./operations";
 
 const initialState = {
-  contacts: [],
-  filter: '',
+  adverts: null,
+  filter: "",
+  isLoading: false,
+  error: null,
 };
 
-const advertsCarsSlice = createSlice({
-  // Ім'я слайсу
-  name: 'contacts',
-  // Початковий стан редюсера слайсу
+const advertsSlice = createSlice({
+  name: "adverts",
   initialState: initialState,
-  // Об'єкт редюсерів
-  reducers: {
-    addNewContact(state, action) {
-      state.contacts.push(action.payload);
-    },
-    deleteContact(state, action) {
-      // state.contacts.filter(elem => elem.id !== action.payload);
-      const deletedContactIndex = state.contacts.findIndex(
-        contact => contact.id === action.payload
-      );
-      state.contacts.splice(deletedContactIndex, 1);
-    },
-    findContact(state, action) {
-      state.filter = action.payload;
-    },
-  },
+  extraReducers: (builder) =>
+    builder
+      .addCase(requestAdverts.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+      .addCase(requestAdverts.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.adverts = action.payload;
+      })
+      .addCase(requestAdverts.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload;
+      }),
 });
 
-// Генератори екшенів
-export const { addNewContact, deleteContact, findContact, filterContacts } =
-advertsCarsSlice.actions;
-// Редюсер слайсу
-export const advertsCarsReducer = advertsCarsSlice.reducer;
+export const advertsReducer = advertsSlice.reducer;

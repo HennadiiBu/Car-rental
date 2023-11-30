@@ -1,4 +1,4 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import {
   persistStore,
   persistReducer,
@@ -8,27 +8,25 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-import { advertsCarsReducer } from './advertsCarsReducer';
-
-
+} from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import { advertsReducer } from "./advertsCarsReducer";
 
 const rootReducer = combineReducers({
-    advertsCars: advertsCarsReducer,
+  adverts: advertsReducer,
 });
 
 const persistConfig = {
-  key: 'root',
+  key: "root",
   storage,
-  blacklist: ['filter']
+  blacklist: ["filter"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const store = configureStore({
   reducer: persistedReducer,
-  middleware: getDefaultMiddleware =>
+  middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
