@@ -1,11 +1,11 @@
 import React from 'react'
-import Catalog from '../components/Catalog/Catalog'
+import AdvertList from '../components/Catalog/AdvertList/AdvertList'
 
 const CatalogPage = () => {
   return (
-    <div>
-      <Catalog />
-    </div>
+    <section>
+      <AdvertList />
+    </section>
   )
 }
 

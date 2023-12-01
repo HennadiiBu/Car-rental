@@ -1,0 +1,10 @@
+ .container{
+    /* max-width: 1440px; */
+    padding: 0 128px 0 128px;
+ }
+ 
+ .advertList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+}
