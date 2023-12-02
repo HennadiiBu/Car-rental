@@ -4,14 +4,22 @@ import { getAdverts } from "../../../redux/selectors";
 import { requestAdverts } from "../../../redux/operations";
 
 import css from "./AdvertItem.module.css";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+
+import adverts from '../../../advertsCars.json'
 
 const AdvertItem = () => {
-  const dispatch = useDispatch();
-  const adverts = useSelector(getAdverts);
+  // const dispatch = useDispatch();
+  // const adverts = useSelector(getAdverts);
 
-  useEffect(() => {
-    dispatch(requestAdverts());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(requestAdverts());
+  // }, [dispatch]);
+
+
+console.log(adverts)
+
   return adverts.map((advert) => {
     const country = advert.address.split(", ").slice(2, 3);
     const sity = advert.address.split(", ").slice(1, 2);
@@ -28,6 +36,15 @@ const AdvertItem = () => {
             alt={advert.description}
             className={css.advertImage}
           />
+          {true ? (
+            <button className={css.favoriteButton}>
+              <FavoriteIcon className={css.favoriteIcon} />
+            </button>
+          ) : (
+            <button className={css.favoriteButton}>
+              <FavoriteBorderIcon className={css.notFavoriteIcon} />
+            </button>
+          )}
         </div>
         <div className={css.advertTitleContainer}>
           <h2 className={css.advertTitle}>

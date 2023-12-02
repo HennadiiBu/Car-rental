@@ -1,0 +1,32 @@
+.startButton {
+  padding: 10px 30px;
+  border: 1px solid #3470ff;
+  border-radius: 10px;
+  background-color: #3470ff;
+  text-decoration: none;
+  color: white;
+}
+
+.startButton:hover {
+  background-color: #0b44cd;
+}
+
+.title {
+  color: #3470ff;
+}
+.text {
+  padding: 10px;
+  margin: 0 auto 50px;
+  width: 1000px;
+
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.image {
+  width: 100%;
+  margin-top: 30px;
+}

@@ -2,10 +2,6 @@
   list-style: none;
   width: 274px;
   height: 426px;
-
-  /* white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; */
 }
 
 .descBox {
@@ -61,6 +57,8 @@
 }
 
 .advertImageContainer {
+  position: relative;
+
   border-radius: 14px;
   background: linear-gradient(
       180deg,
@@ -89,10 +87,36 @@
   border-radius: 12px;
   background-color: #3470ff;
   color: #fff;
+
+  cursor: pointer;
 }
 
 .advertButton:hover {
   background-color: #0b44cd;
   border: none;
+}
 
+.favoriteIcon {
+  fill: #3470ff;
+
+  cursor: pointer;
+}
+
+.notFavoriteIcon {
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.notFavoriteIcon:hover {
+  color: #3470ff;
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  background: none;
+  border: none;
 }

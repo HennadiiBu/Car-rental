@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://64f079088a8b66ecf779bb2a.mockapi.io/advert";
+const BASE_URL = "https://656b9056dac3630cf7283941.mockapi.io/advert";
 
 export async function fetchAdvert() {
   try {
