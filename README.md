@@ -12,6 +12,17 @@ This website is built on the React framework, providing users with a simple and 
 Provides brief information about our service and allows users to browse available cars.
 ![image](https://github.com/HennadiiBu/car-rental/assets/99074724/866ebe12-12dd-4380-9d8a-bc93edcd1152)
 
+###Catalog:
+The car catalog page where users can apply filters based on the car brand, maximum rental price, and mileage. Here, you'll find detailed information about available cars, their specifications, and costs.
+![image](https://github.com/HennadiiBu/car-rental/assets/99074724/7e5341ac-58d2-4478-b817-2a2754c25c2b)
+
+### Favorites:
+On this page, users can add cars to their favorites for later consideration and booking.
+![image](https://github.com/HennadiiBu/car-rental/assets/99074724/54213e74-adaa-499e-b80f-fa6f40d93b88)
+
+
+## Web Features
+- ### Filtering: _We offer a convenient filter to quickly find cars based on brand, rental price, and mileage. This helps users find the perfect car that fits their needs._
 
 ### `npm start`
 
