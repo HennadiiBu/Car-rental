@@ -25,23 +25,17 @@ const CatalogPage = () => {
   const mileageMin = useSelector(getMileageMin);
   const mileageMax = useSelector(getMileageMax);
 
+  // const adverts = useSelector(getAdverts);
+
   useEffect(() => {
     if (filtering) {
       (async () => {
         const visibleCars = await getFilteredCars(adverts, filter);
         setFilterCars(visibleCars);
+        //   dispatch(requestAdverts());
       })();
     }
   }, [filtering, filter, dispatch]);
-
-  // const dispatch = useDispatch();
-  // const adverts = useSelector(getAdverts);
-
-  // useEffect(() => {
-  //   dispatch(requestAdverts());
-  // }, [dispatch]);
-
-  const showFiltredAdverts = Array.isArray(filterCars) && filterCars.length > 0;
 
   const handleSearch = async (event) => {
     event.preventDefault();
@@ -60,14 +54,15 @@ const CatalogPage = () => {
       <Filter handleSearch={handleSearch} />
       {filtering ? (
         filterCars.length === 0 ? (
-          <p>Oops, nothing found here. Try changing your search parameters...</p>
+          <p>
+            Oops, nothing found here. Try changing your search parameters...
+          </p>
         ) : (
           <AdvertList adverts={filterCars} />
         )
       ) : (
         <AdvertList adverts={adverts} />
       )}
-    
     </main>
   );
 };
