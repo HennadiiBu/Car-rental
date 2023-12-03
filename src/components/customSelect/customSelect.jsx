@@ -12,7 +12,6 @@ import {
   getPrice,
 } from "../../redux/selectors";
 
-
 export default function CustomSelect({ placeholder, minWidth, options, name }) {
   const [selectedOption, setSelectedOption] = useState(null);
   const dispatch = useDispatch();
@@ -22,16 +21,16 @@ export default function CustomSelect({ placeholder, minWidth, options, name }) {
   const mileageMin = useSelector(getMileageMin);
   const mileageMax = useSelector(getMileageMax);
 
-  const capitalizeFirstLetter = (text) => {
-    return text.charAt(0).toUpperCase() + text.slice(1);
-  };
+  // const capitalizeFirstLetter = (text) => {
+  //   return text.charAt(0).toUpperCase() + text.slice(1);
+  // };
 
   const pars = (str) => parseInt(str.replace(/\D/g, ""), 10);
 
   const optionsCategories = options.map((make) => {
     return {
-      value: pars(make),
-      label: capitalizeFirstLetter(make),
+      value: name === "brand" ? make : pars(make),
+      label: make,
     };
   });
 
