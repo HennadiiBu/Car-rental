@@ -8,7 +8,9 @@ https://hennadiibu.github.io/car-rental/
 
 This website is built on the React framework, providing users with a simple and convenient way to rent cars. We have three main pages:
 
-##-Home: Provides brief information about our service and allows users to browse available cars.
+### Home:
+Provides brief information about our service and allows users to browse available cars.
+![image](https://github.com/HennadiiBu/car-rental/assets/99074724/866ebe12-12dd-4380-9d8a-bc93edcd1152)
 
 
 ### `npm start`
