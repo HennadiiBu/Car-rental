@@ -10,7 +10,7 @@ import css from "./AdvertList.module.css";
 import adverts from "../../../advertsCars.json";
 
 const AdvertList = () => {
-    // const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   // const adverts = useSelector(getAdverts);
 
   // useEffect(() => {
@@ -20,7 +20,10 @@ const AdvertList = () => {
   return (
     <section className={css.container}>
       <ul className={css.advertList}>
-        <AdvertItem adverts={adverts}/>
+        {adverts.map((advert) => (
+          <AdvertItem advert={advert} />
+        ))}
+        {/* <AdvertItem adverts={adverts} /> */}
       </ul>
     </section>
   );
