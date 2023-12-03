@@ -40,20 +40,28 @@ const CarMileage = () => {
   };
 
   return (
-    <div className={css.inputBox}>
-        <p className={css.lableText}>Сar mileage / km</p>
-      <input
-        type="number"
-        className={css.inputFrom}
-        name="mileageMin"
-        onInput={handleInput}
-      />
-        <input
-        type="number"
-        className={css.inputTo}
-        name="mileageMax"
-        onChange={handleInput}
-      />
+    <div>
+      <p className={css.lableText}>Сar mileage / km</p>
+      <div className={css.box}>
+        <div className={css.inputBox}>
+          <p className={css.inputText}>From</p>
+          <input
+            type="number"
+            className={css.inputFrom}
+            name="mileageMin"
+            onInput={handleInput}
+          />
+        </div>
+        <div className={css.inputBox}>
+          <p className={css.inputText}>To</p>
+          <input
+            type="number"
+            className={css.inputTo}
+            name="mileageMax"
+            onChange={handleInput}
+          />
+        </div>
+      </div>
     </div>
   );
 };

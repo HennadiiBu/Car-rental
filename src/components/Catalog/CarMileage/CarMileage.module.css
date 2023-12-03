@@ -3,6 +3,7 @@
   height: 48px;
 
   border-radius: 14px 0px 0px 14px;
+  border: none;
   border-right: 1px solid rgba(138, 138, 137, 0.2);
   background: #f7f7fb;
   color: #121417;
@@ -11,17 +12,30 @@
   border-bottom-color: #f7f7fb;
 
   outline: none;
+
+  padding-left: 70px;
+}
+
+.inputFrom:hover {
+  border: 1px solid gray;
 }
 
 .inputTo {
   width: 160px;
   height: 48px;
   border-radius: 0px 14px 14px 0px;
+  border: none;
 
   background: #f7f7fb;
   color: #121417;
   border-color: #f7f7fb;
   outline: none;
+
+  padding-left: 50px;
+}
+
+.inputTo:hover {
+  border: 1px solid gray;
 }
 
 .lableText {
@@ -33,4 +47,25 @@
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputText {
+  position: absolute;
+  top: 12px;
+  left: 24px;
+
+  color: #121417;
+
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.box {
+  display: flex;
 }
