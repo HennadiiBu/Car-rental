@@ -12,7 +12,7 @@ Provides brief information about our service and allows users to browse availabl
 
 ### Catalog:
 The car catalog page where users can apply filters based on the car brand, maximum rental price, and mileage. Here, you'll find detailed information about available cars, their specifications, and costs.
-![image](https://github.com/HennadiiBu/car-rental/assets/99074724/7e5341ac-58d2-4478-b817-2a2754c25c2b)
+![image](https://github.com/HennadiiBu/car-rental/assets/99074724/e4eb68b6-55fc-4d7d-9700-68cef16c8f7f)
 
 ### Favorites:
 On this page, users can add cars to their favorites for later consideration and booking.
