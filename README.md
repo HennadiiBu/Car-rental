@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Car Rental
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Car Rental Website Repository
 
-## Available Scripts
+## About WebSite
 
-In the project directory, you can run:
+![Логотип](путь_к_изображению)
+
 
 ### `npm start`
 
