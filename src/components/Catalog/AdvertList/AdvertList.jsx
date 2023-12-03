@@ -7,9 +7,9 @@ import { requestAdverts } from "../../../redux/operations";
 
 import css from "./AdvertList.module.css";
 
-import adverts from "../../../advertsCars.json";
+// import adverts from "../../../advertsCars.json";
 
-const AdvertList = () => {
+const AdvertList = ({adverts}) => {
   // const dispatch = useDispatch();
   // const adverts = useSelector(getAdverts);
 

@@ -1,0 +1,14 @@
+.searchBtn {
+  width: 136px;
+  height: 48px;
+  border-radius: 12px;
+  background: #3470ff;
+  color: white;
+  border: none;
+
+}
+
+.searchBtn:hover {
+  background: #0b44cd;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.inputFrom {
+  width: 160px;
+  height: 48px;
+
+  border-radius: 14px 0px 0px 14px;
+  border-right: 1px solid rgba(138, 138, 137, 0.2);
+  background: #f7f7fb;
+  color: #121417;
+  border-top-color: #f7f7fb;
+  border-left-color: #f7f7fb;
+  border-bottom-color: #f7f7fb;
+
+  outline: none;
+}
+
+.inputTo {
+  width: 160px;
+  height: 48px;
+  border-radius: 0px 14px 14px 0px;
+
+  background: #f7f7fb;
+  color: #121417;
+  border-color: #f7f7fb;
+  outline: none;
+}
+
+.lableText {
+  text-align: start;
+  color: #8a8a89;
+
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
