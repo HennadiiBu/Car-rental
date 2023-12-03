@@ -11,9 +11,11 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { advertsReducer } from "./advertsCarsReducer";
+import { advertsFavoriteReducer } from "./advertsFvoriteCarsReducer";
 
 const rootReducer = combineReducers({
   adverts: advertsReducer,
+  favorites: advertsFavoriteReducer,
 });
 
 const persistConfig = {

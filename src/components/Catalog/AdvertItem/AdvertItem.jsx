@@ -1,28 +1,31 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getAdverts } from "../../../redux/selectors";
-import { requestAdverts } from "../../../redux/operations";
-
-import { nanoid } from "nanoid";
 
 import css from "./AdvertItem.module.css";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-import adverts from "../../../advertsCars.json";
 import { Modal } from "../../Modal/Modal";
 import RenralCarModal from "../../RenralCarModal/RenralCarModal";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  addFavorite,
+  removeFavorite,
+} from "../../../redux/advertsFvoriteCarsReducer";
+import { getFavorites } from "../../../redux/selectors";
 
-const AdvertItem = () => {
-  // const dispatch = useDispatch();
-  // const adverts = useSelector(getAdverts);
-
+const AdvertItem = ({ adverts }) => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [currentAdvert, setCurrentAdvert] = useState(null);
+  const [isFavorite, setIsFavorite] = useState(false);
+  const  favoriteAdverts  = useSelector(getFavorites);
+  const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(requestAdverts());
-  // }, [dispatch]);
+  useEffect(() => {
+    if (favoriteAdverts?.some((favorite) => favorite.id === adverts.id)) {
+      setIsFavorite(true);
+    }
+  }, [favoriteAdverts, adverts]);
+
 
   return adverts.map((advert) => {
     const country = advert.address.split(", ").slice(2, 3);
@@ -37,6 +40,16 @@ const AdvertItem = () => {
       setCurrentAdvert(advert);
     };
 
+    const handleToFavorite = (e) => {
+      setIsFavorite(!isFavorite);
+
+      if (favoriteAdverts?.some((favorite) => favorite.id === advert.id)) {
+        dispatch(removeFavorite(advert));
+      } else {
+        dispatch(addFavorite(advert));
+      }
+    };
+
     return (
       <>
         <li key={advert.id} className={css.advertItem}>
@@ -46,12 +59,12 @@ const AdvertItem = () => {
               alt={advert.description}
               className={css.advertImage}
             />
-            {true ? (
-              <button className={css.favoriteButton}>
+            {isFavorite ? (
+              <button className={css.favoriteButton} onClick={handleToFavorite}>
                 <FavoriteIcon className={css.favoriteIcon} />
               </button>
             ) : (
-              <button className={css.favoriteButton}>
+              <button className={css.favoriteButton} onClick={handleToFavorite}>
                 <FavoriteBorderIcon className={css.notFavoriteIcon} />
               </button>
             )}

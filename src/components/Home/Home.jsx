@@ -2,8 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import css from "./Home.module.css";
 
-import image from "../../assets/bkg.jpg";
-
 const Home = () => {
   return (
     <div className={css.homeContainer}>
@@ -18,7 +16,6 @@ const Home = () => {
       <NavLink to="/catalog" className={css.startButton}>
         Get started
       </NavLink>
-      {/* <img src={image} alt="" className={css.image} /> */}
     </div>
   );
 };

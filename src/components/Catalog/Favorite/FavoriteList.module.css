@@ -1,0 +1,11 @@
+.container{
+
+    padding: 0 128px 0 128px;
+ }
+ 
+ .advertList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 29px;
+}
