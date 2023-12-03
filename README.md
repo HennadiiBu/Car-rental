@@ -4,7 +4,7 @@ Welcome to Car Rental Website Repository
 
 ## About WebSite
 
-![Логотип](путь_к_изображению)
+![Логотип]([путь_к_изображению](https://hennadiibu.github.io/car-rental/))
 
 
 ### `npm start`
