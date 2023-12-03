@@ -12,6 +12,7 @@ import {
   getPrice,
 } from "../../redux/selectors";
 
+
 export default function CustomSelect({ placeholder, minWidth, options, name }) {
   const [selectedOption, setSelectedOption] = useState(null);
   const dispatch = useDispatch();
@@ -25,9 +26,11 @@ export default function CustomSelect({ placeholder, minWidth, options, name }) {
     return text.charAt(0).toUpperCase() + text.slice(1);
   };
 
+  const pars = (str) => parseInt(str.replace(/\D/g, ""), 10);
+
   const optionsCategories = options.map((make) => {
     return {
-      value: make,
+      value: pars(make),
       label: capitalizeFirstLetter(make),
     };
   });

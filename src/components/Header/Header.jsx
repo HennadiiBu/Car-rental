@@ -10,17 +10,35 @@ import carLogo from "../../assets/logo.jpg";
 const Header = () => {
   return (
     <header className={css.header}>
-      <img src={carLogo} alt="logo" className={css.logo}/>
+      <img src={carLogo} alt="logo" className={css.logo} />
       <nav className={css.nav}>
-        <NavLink to="/" className={css.navLink}>
+        <NavLink
+          to="/"
+          className={css.navLink}
+          style={({ isActive }) => ({
+            color: isActive ? "#3470ff" : "#121417",
+          })}
+        >
           <HomeOutlinedIcon />
           Home
         </NavLink>
-        <NavLink to="/catalog" className={css.navLink}>
+        <NavLink
+          to="/catalog"
+          className={css.navLink}
+          style={({ isActive }) => ({
+            color: isActive ? "#3470ff" : "#121417",
+          })}
+        >
           <ImportContactsOutlinedIcon />
           Catalog
         </NavLink>
-        <NavLink to="/favorites" className={css.navLink}>
+        <NavLink
+          to="/favorites"
+          className={css.navLink}
+          style={({ isActive }) => ({
+            color: isActive ? "#3470ff" : "#121417",
+          })}
+        >
           <FavoriteBorderOutlinedIcon />
           Favorites
         </NavLink>

@@ -8,6 +8,7 @@ import {
   getMileageMin,
   getPrice,
 } from "../../../redux/selectors";
+import { formatNumberWithCommas } from "../helpers/formatNumber";
 
 const CarMileage = () => {
   const dispatch = useDispatch();
@@ -49,7 +50,7 @@ const CarMileage = () => {
             type="number"
             className={css.inputFrom}
             name="mileageMin"
-            onInput={handleInput}
+            onChange={handleInput}
           />
         </div>
         <div className={css.inputBox}>
