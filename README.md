@@ -56,7 +56,7 @@ and additional libraries for UI and state managment
 
 ## Gratitude
 Thank you for using our project! If you have any questions or suggestions, please contact us.
-Hennadii Bublikov [GitHub](https://github.com/HennadiiBu) [LinkedIn](https://www.linkedin.com/in/hennadii-bublikov/)
+**Hennadii Bublikov** [GitHub](https://github.com/HennadiiBu) [LinkedIn](https://www.linkedin.com/in/hennadii-bublikov/)
 
 
 
