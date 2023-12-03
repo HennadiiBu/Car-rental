@@ -30,3 +30,11 @@
   width: 100%;
   margin-top: 30px;
 }
+
+.homeContainer {
+  height: 1051px;
+  background-image: url(../../assets/bkg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size:cover;
+}

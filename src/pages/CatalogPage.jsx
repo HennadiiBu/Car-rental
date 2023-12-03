@@ -3,9 +3,9 @@ import AdvertList from '../components/Catalog/AdvertList/AdvertList'
 
 const CatalogPage = () => {
   return (
-    <section>
+    <main>
       <AdvertList />
-    </section>
+    </main>
   )
 }
 

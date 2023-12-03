@@ -9,15 +9,16 @@ const Home = () => {
     <div className={css.homeContainer}>
       <h1 className={css.title}>Welcome to Car Rental!</h1>
       <p className={css.text}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga obcaecati,
-        quod doloremque porro deserunt saepe alias voluptatibus laudantium cum
-        molestiae, iste recusandae eveniet repellendus pariatur! Natus, expedita
-        nobis. Nihil, quo.
+        Discover convenience and adventure with our diverse range of
+        well-maintained vehicles. Enjoy flexible rental options, affordable
+        rates, and convenient locations. Our dedicated team ensures exceptional
+        customer service, prioritizing your safety and comfort. Book with us for
+        a hassle-free journey and unforgettable memories.
       </p>
       <NavLink to="/catalog" className={css.startButton}>
         Get started
       </NavLink>
-      <img src={image} alt="" className={css.image}/>
+      {/* <img src={image} alt="" className={css.image} /> */}
     </div>
   );
 };

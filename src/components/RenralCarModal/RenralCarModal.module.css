@@ -1,0 +1,191 @@
+.modalContainer {
+  margin: 0 auto;
+
+  border-radius: 24px;
+  background-color: #fff;
+}
+
+.modalImage {
+  width: 461px;
+  height: 248px;
+  border-radius: 14px;
+  background-color: #f3f3f2;
+}
+
+.modalTitle {
+  margin-top: 14px;
+  color: #121417;
+
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.modalTitleAccent {
+  color: #3470ff;
+}
+
+.modalDescBox {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  column-gap: 6px;
+  width: 100%;
+  margin-top: 4px;
+  /* margin-bottom: 14px; */
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modalDescText {
+  padding-right: 6px;
+
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+
+  color: rgba(18, 20, 23, 0.5);
+
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+
+  list-style: none;
+}
+
+.modalDescBox1 {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  column-gap: 6px;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modalDescText1 {
+  padding-right: 6px;
+
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+
+  color: rgba(18, 20, 23, 0.5);
+
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+
+  list-style: none;
+}
+
+.modalButton {
+  margin-top: 31px;
+  width: 168px;
+  height: 44px;
+
+  border: none;
+  border-radius: 12px;
+  background-color: #3470ff;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.modalButton:hover {
+  background-color: #0b44cd;
+  border: none;
+}
+
+.conditionsBox {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.modalConditions:not(:first-child) {
+  padding: 7px 14px;
+
+  color: #363535;
+
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+}
+
+.nonNumeric {
+  padding: 7px 14px;
+
+  color: #363535;
+
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+}
+
+.highlightedText {
+  color: #3470ff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+}
+
+.modalConditionBox {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.titleConditions {
+  margin-top: 24px;
+  color: #121417;
+
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.desc {
+  margin-bottom: 24px;
+  color: #121417;
+
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.accessoriesText {
+  color: #121417;
+
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}

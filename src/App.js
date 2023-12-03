@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
+
 // import HomePage from "./pages/HomePage";
 // import CatalogPage from "./pages/CatalogPage";
 // import FavoritePage from "./pages/FavoritePage";
