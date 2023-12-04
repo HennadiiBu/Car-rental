@@ -13,6 +13,7 @@ import { getFilteredCars } from "../components/Catalog/helpers/getFilteredCars";
 
 import adverts from "../advertsCars.json";
 import { setFilter } from "../redux/filterReducer";
+// import { requestAdverts } from "../redux/operations";
 
 const CatalogPage = () => {
   const dispatch = useDispatch();
@@ -32,7 +33,7 @@ const CatalogPage = () => {
       (async () => {
         const visibleCars = await getFilteredCars(adverts, filter);
         setFilterCars(visibleCars);
-        //   dispatch(requestAdverts());
+        // dispatch(requestAdverts());
       })();
     }
   }, [filtering, filter, dispatch]);
