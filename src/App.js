@@ -1,5 +1,4 @@
-import { Navigate,  Routes } from "react-router-dom";
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 
