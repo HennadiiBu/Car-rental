@@ -1,4 +1,6 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate,  Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+
 import "./App.css";
 
 import Header from "./components/Header/Header";
